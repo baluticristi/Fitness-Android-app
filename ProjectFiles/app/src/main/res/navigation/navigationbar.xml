@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigationbar"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/workoutOverview"
+        android:name="com.example.myapplication.WorkoutOverview"
+        android:label="fragment_workout_overview"
+        tools:layout="@layout/fragment_workout_overview" />
+    <fragment
+        android:id="@+id/addANewWorkout"
+        android:name="com.example.myapplication.AddANewWorkout"
+        android:label="fragment_add_a_new_workout"
+        tools:layout="@layout/fragment_add_a_new_workout" />
+    <fragment
+        android:id="@+id/pastWorkouts"
+        android:name="com.example.myapplication.PastWorkouts"
+        android:label="fragment_past_workouts"
+        tools:layout="@layout/fragment_past_workouts" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.myapplication.HomeFragment"
+        android:label="HomeFragment" />
+</navigation>

@@ -5,3 +5,6 @@
 		
 17.06 -- Am cărat, încărcat, descărcat 3 mașini de mobilă... jumătate din ziua de practică.
 		Ulterior am citit despre flutter, și am creat o nouă iconiță pentru aplicație.
+
+20.06 -- Am remodelat meniul principal, mutându-l în partea de jos a aplicației, acum este complet funcțional. 
+		Am creat o schemă mai sigură pe baza căreia să conturez aplicația.
