@@ -8,3 +8,7 @@
 
 20.06 -- Am remodelat meniul principal, mutându-l în partea de jos a aplicației, acum este complet funcțional. 
 		Am creat o schemă mai sigură pe baza căreia să conturez aplicația.
+
+21.06 -- Am creat template-ul pentru card-uri, ce se autogenereaza.
+		Am terminat pagina principala din punct de vedere al design-ului.
+		Am stabilit niste directii pe care sa le ia proiectul.

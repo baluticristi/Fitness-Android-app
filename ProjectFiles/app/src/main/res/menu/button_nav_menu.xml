@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/home"
+        android:title="Home" />
+    <item
+        android:id="@+id/workoutOverview"
+        android:icon="@drawable/workoutoverview"
+        android:title="Overview" />
+    <item
+        android:id="@+id/pastWorkouts"
+        android:icon="@drawable/history"
+        android:title="History" />
+    <item
+        android:id="@+id/addANewWorkout"
+        android:icon="@drawable/addanewworkout"
+        android:title="Add" />
+</menu>
