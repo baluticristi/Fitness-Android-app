@@ -12,3 +12,6 @@
 21.06 -- Am creat template-ul pentru card-uri, ce se autogenereaza.
 		Am terminat pagina principala din punct de vedere al design-ului.
 		Am stabilit niste directii pe care sa le ia proiectul.
+
+22.06 -- Am construit card-ul pentru exercițiu și creat fișierele necesare implementării.
+		Inclusiv clasa de exercițiu...

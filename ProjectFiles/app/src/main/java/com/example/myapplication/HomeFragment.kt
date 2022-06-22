@@ -5,14 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.annotation.ContentView
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentHomeBinding
-import kotlinx.coroutines.currentCoroutineContext
-import kotlinx.coroutines.withContext
-import kotlin.coroutines.coroutineContext
 
 
 private const val ARG_PARAM1 = "param1"
@@ -20,7 +14,7 @@ private const val ARG_PARAM2 = "param2"
 
 
 
-class HomeFragment : Fragment() {
+class HomeFragment : Fragment(), RoutineClickListener {
     // TODO: Rename and change types of parameters
     private lateinit var binding: FragmentHomeBinding
 
@@ -39,6 +33,9 @@ class HomeFragment : Fragment() {
 
     }
 
+    override fun onClick(routine: Routine) {
+        //TODO TREBUIE IMPLEMENTATA FUNCTIA DE START RUTINA CAND SE DA CLICK
+    }
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -46,12 +43,11 @@ class HomeFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = FragmentHomeBinding.inflate(layoutInflater)
 
-        populateRoutines()
-
+        val mainActivity=this
         binding.recyclerView.apply {
             //layoutManager = GridLayoutManager(this.context , 3)
             layoutManager = LinearLayoutManager(context)
-            adapter = RoutineAdapter(routinelist)
+            adapter = RoutineAdapter(routinelist,mainActivity)
         }
 
         return binding.root
@@ -79,24 +75,8 @@ class HomeFragment : Fragment() {
                 }
             }
     }
+
+
 }
 
-private fun populateRoutines() {
-    val routine1 = Routine(
-        "Piept & Biceps"
-    )
-    routinelist.add(routine1)
 
-    val routine2 = Routine(
-        "Picioare"
-    )
-    routinelist.add(routine2)
-    val routine3 = Routine(
-        "Umeri & Triceps"
-    )
-    routinelist.add(routine3)
-    val routine4 = Routine(
-        "Spate"
-    )
-    routinelist.add(routine4)
-}

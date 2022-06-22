@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:id="@+id/routineCard"
+    card_view:cardBackgroundColor="@color/teal_200"
+    card_view:cardCornerRadius="8dp"
+    card_view:contentPadding="10dp"
+    android:foreground="?selectableItemBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/exercisename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/exercise_placeholder"
+                />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/set1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textSize="30dp"
+                    card_view:layout_constraintLeft_toLeftOf="parent"
+                    card_view:layout_constraintTop_toTopOf="parent"
+                    android:text="Set 1:"/>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="weight:"
+                    android:textSize="30dp"
+                    card_view:layout_constraintStart_toEndOf="@+id/set1"
+                    card_view:layout_constraintTop_toTopOf="parent"/>
+
+                <EditText
+                    android:id="@+id/set1weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:ems="3"
+                    android:inputType="number"
+                    android:autofillHints="0"
+                    android:textSize="20dp"
+                    card_view:layout_constraintStart_toEndOf="@+id/textView"
+                    card_view:layout_constraintTop_toTopOf="@id/textView" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="reps:"
+                    android:textSize="30dp"
+                    card_view:layout_constraintTop_toBottomOf="@id/textView"
+                    card_view:layout_constraintRight_toRightOf="@id/textView"
+                    />
+
+                <EditText
+                    android:id="@+id/set1reps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:ems="3"
+                    android:inputType="number"
+                    android:autofillHints="0"
+                    android:textSize="20dp"
+                    card_view:layout_constraintStart_toEndOf="@+id/textView1"
+                    card_view:layout_constraintTop_toTopOf="@id/textView1" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/set2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textSize="30dp"
+                    card_view:layout_constraintLeft_toLeftOf="parent"
+                    card_view:layout_constraintTop_toTopOf="parent"
+                    android:text="Set 2:"/>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="weight:"
+                    android:textSize="30dp"
+                    card_view:layout_constraintStart_toEndOf="@+id/set2"
+                    card_view:layout_constraintTop_toTopOf="parent"/>
+
+                <EditText
+                    android:id="@+id/set2weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:ems="3"
+                    android:inputType="number"
+                    android:autofillHints="0"
+                    android:textSize="20dp"
+                    card_view:layout_constraintStart_toEndOf="@+id/textView2"
+                    card_view:layout_constraintTop_toTopOf="@id/textView2" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="reps:"
+                    android:textSize="30dp"
+                    card_view:layout_constraintTop_toBottomOf="@id/textView2"
+                    card_view:layout_constraintRight_toRightOf="@id/textView2"
+                    />
+
+                <EditText
+                    android:id="@+id/set2reps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:ems="3"
+                    android:inputType="number"
+                    android:autofillHints="0"
+                    android:textSize="20dp"
+                    card_view:layout_constraintStart_toEndOf="@+id/textView22"
+                    card_view:layout_constraintTop_toTopOf="@id/textView22" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/set3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textSize="30dp"
+                    card_view:layout_constraintLeft_toLeftOf="parent"
+                    card_view:layout_constraintTop_toTopOf="parent"
+                    android:text="Set 3:"/>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="weight:"
+                    android:textSize="30dp"
+                    card_view:layout_constraintStart_toEndOf="@+id/set3"
+                    card_view:layout_constraintTop_toTopOf="parent"/>
+
+                <EditText
+                    android:id="@+id/set3weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:ems="3"
+                    android:inputType="number"
+                    android:autofillHints="0"
+                    android:textSize="20dp"
+                    card_view:layout_constraintStart_toEndOf="@+id/textView3"
+                    card_view:layout_constraintTop_toTopOf="@id/textView3" />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="reps:"
+                    android:textSize="30dp"
+                    card_view:layout_constraintTop_toBottomOf="@id/textView3"
+                    card_view:layout_constraintRight_toRightOf="@id/textView3"
+                    />
+
+                <EditText
+                    android:id="@+id/set3reps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:ems="3"
+                    android:inputType="number"
+                    android:autofillHints="0"
+                    android:textSize="20dp"
+                    card_view:layout_constraintStart_toEndOf="@+id/textView33"
+                    card_view:layout_constraintTop_toTopOf="@id/textView33" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/set4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textSize="30dp"
+                    card_view:layout_constraintLeft_toLeftOf="parent"
+                    card_view:layout_constraintTop_toTopOf="parent"
+                    android:text="Set 4:"/>
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="weight:"
+                    android:textSize="30dp"
+                    card_view:layout_constraintStart_toEndOf="@+id/set4"
+                    card_view:layout_constraintTop_toTopOf="parent"/>
+
+                <EditText
+                    android:id="@+id/set4weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:ems="3"
+                    android:inputType="number"
+                    android:autofillHints="0"
+                    android:textSize="20dp"
+                    card_view:layout_constraintStart_toEndOf="@+id/textView4"
+                    card_view:layout_constraintTop_toTopOf="@id/textView4" />
+
+                <TextView
+                    android:id="@+id/textView44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="reps:"
+                    android:textSize="30dp"
+                    card_view:layout_constraintTop_toBottomOf="@id/textView4"
+                    card_view:layout_constraintRight_toRightOf="@id/textView4"
+                    />
+
+                <EditText
+                    android:id="@+id/set4reps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:ems="3"
+                    android:inputType="number"
+                    android:autofillHints="0"
+                    android:textSize="20dp"
+                    card_view:layout_constraintStart_toEndOf="@+id/textView44"
+                    card_view:layout_constraintTop_toTopOf="@id/textView44" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
+

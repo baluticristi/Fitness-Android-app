@@ -6,4 +6,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="OwnerGreet">Salutare, Cristian</string>
     <string name="routine_placeholder">Routine placeholder</string>
+    <string name="mesaj_no_workout">Niciun workout in desfasurare</string>
+    <string name="exercise_placeholder">Exercitiu inexistent</string>
 </resources>
