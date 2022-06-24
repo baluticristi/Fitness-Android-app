@@ -24,3 +24,14 @@
 		Am rezolvat bug-ul legat de greutăți și repetări.
 	
 Final.
+Home:
+![Home](Home.jpg)
+
+Workout
+![Workout](Workout.jpg)
+
+History:
+![History](History.jpg)
+
+About
+![About](AboutApp.jpg)
