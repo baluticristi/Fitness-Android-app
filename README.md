@@ -15,3 +15,8 @@
 
 22.06 -- Am construit card-ul pentru exercițiu și creat fișierele necesare implementării.
 		Inclusiv clasa de exercițiu...
+
+23.06 -- Am construit meniul pentru workout, generat automat, si salvat in memorie detaliile despre fiecare workout.
+		Am contruit meniul pentru istoric, generat automat pe baza workout-urilor salvate in memorie. Dar exista un bug
+		 care nu lasa.
+

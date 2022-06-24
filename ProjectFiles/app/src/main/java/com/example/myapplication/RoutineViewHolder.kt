@@ -17,4 +17,5 @@ class RoutineViewHolder (
                     clickListener.onClick(routine)
                 }
             }
+
 }

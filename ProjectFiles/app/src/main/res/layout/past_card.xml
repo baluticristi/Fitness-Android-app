@@ -21,6 +21,24 @@
             >
 
             <TextView
+                android:id="@+id/routinename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/routine_placeholder"
+                />
+            <TextView
+                android:id="@+id/dataexercise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Data exercitiului"
+                />
+            <TextView
                 android:id="@+id/exercisename"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -55,16 +73,13 @@
                     card_view:layout_constraintStart_toEndOf="@+id/set1"
                     card_view:layout_constraintTop_toTopOf="parent"/>
 
-                <EditText
+                <TextView
                     android:id="@+id/set1weight"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:ems="3"
-                    android:gravity="right"
-                    android:inputType="number"
-                    android:autofillHints="0"
-                    android:textSize="20dp"
+                    android:text="00"
+                    android:textSize="30dp"
                     card_view:layout_constraintStart_toEndOf="@+id/textView"
                     card_view:layout_constraintTop_toTopOf="@id/textView" />
 
@@ -78,16 +93,13 @@
                     card_view:layout_constraintRight_toRightOf="@id/textView"
                     />
 
-                <EditText
+                <TextView
                     android:id="@+id/set1reps"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:ems="3"
-                    android:gravity="right"
-                    android:inputType="number"
-                    android:autofillHints="0"
-                    android:textSize="20dp"
+                    android:text="00"
+                    android:textSize="30dp"
                     card_view:layout_constraintStart_toEndOf="@+id/textView1"
                     card_view:layout_constraintTop_toTopOf="@id/textView1" />
 
@@ -119,16 +131,13 @@
                     card_view:layout_constraintStart_toEndOf="@+id/set2"
                     card_view:layout_constraintTop_toTopOf="parent"/>
 
-                <EditText
+                <TextView
                     android:id="@+id/set2weight"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:ems="3"
-                    android:gravity="right"
-                    android:inputType="number"
-                    android:autofillHints="0"
-                    android:textSize="20dp"
+                    android:text="00"
+                    android:textSize="30dp"
                     card_view:layout_constraintStart_toEndOf="@+id/textView2"
                     card_view:layout_constraintTop_toTopOf="@id/textView2" />
 
@@ -142,16 +151,13 @@
                     card_view:layout_constraintRight_toRightOf="@id/textView2"
                     />
 
-                <EditText
+                <TextView
                     android:id="@+id/set2reps"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:ems="3"
-                    android:gravity="right"
-                    android:inputType="number"
-                    android:autofillHints="0"
-                    android:textSize="20dp"
+                    android:text="00"
+                    android:textSize="30dp"
                     card_view:layout_constraintStart_toEndOf="@+id/textView22"
                     card_view:layout_constraintTop_toTopOf="@id/textView22" />
 
@@ -183,16 +189,13 @@
                     card_view:layout_constraintStart_toEndOf="@+id/set3"
                     card_view:layout_constraintTop_toTopOf="parent"/>
 
-                <EditText
+                <TextView
                     android:id="@+id/set3weight"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:ems="3"
-                    android:gravity="right"
-                    android:inputType="number"
-                    android:autofillHints="0"
-                    android:textSize="20dp"
+                    android:text="00"
+                    android:textSize="30dp"
                     card_view:layout_constraintStart_toEndOf="@+id/textView3"
                     card_view:layout_constraintTop_toTopOf="@id/textView3" />
 
@@ -206,16 +209,13 @@
                     card_view:layout_constraintRight_toRightOf="@id/textView3"
                     />
 
-                <EditText
+                <TextView
                     android:id="@+id/set3reps"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:ems="3"
-                    android:gravity="right"
-                    android:inputType="number"
-                    android:autofillHints="0"
-                    android:textSize="20dp"
+                    android:text="00"
+                    android:textSize="30dp"
                     card_view:layout_constraintStart_toEndOf="@+id/textView33"
                     card_view:layout_constraintTop_toTopOf="@id/textView33" />
 
@@ -247,16 +247,13 @@
                     card_view:layout_constraintStart_toEndOf="@+id/set4"
                     card_view:layout_constraintTop_toTopOf="parent"/>
 
-                <EditText
+                <TextView
                     android:id="@+id/set4weight"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:ems="3"
-                    android:gravity="right"
-                    android:inputType="number"
-                    android:autofillHints="0"
-                    android:textSize="20dp"
+                    android:text="00"
+                    android:textSize="30dp"
                     card_view:layout_constraintStart_toEndOf="@+id/textView4"
                     card_view:layout_constraintTop_toTopOf="@id/textView4" />
 
@@ -270,16 +267,13 @@
                     card_view:layout_constraintRight_toRightOf="@id/textView4"
                     />
 
-                <EditText
+                <TextView
                     android:id="@+id/set4reps"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:ems="3"
-                    android:gravity="right"
-                    android:inputType="number"
-                    android:autofillHints="0"
-                    android:textSize="20dp"
+                    android:text="00"
+                    android:textSize="30dp"
                     card_view:layout_constraintStart_toEndOf="@+id/textView44"
                     card_view:layout_constraintTop_toTopOf="@id/textView44" />
 

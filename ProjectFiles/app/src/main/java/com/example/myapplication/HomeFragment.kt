@@ -5,8 +5,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.navigation.NavController
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.NavigationUI
+import androidx.navigation.ui.NavigationUI.setupWithNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.myapplication.databinding.FragmentHomeBinding
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
 private const val ARG_PARAM1 = "param1"
@@ -35,6 +41,10 @@ class HomeFragment : Fragment(), RoutineClickListener {
 
     override fun onClick(routine: Routine) {
         //TODO TREBUIE IMPLEMENTATA FUNCTIA DE START RUTINA CAND SE DA CLICK
+        WorkoutOverview.setRout(routine.title)
+        R.id.workoutOverview
+        Toast.makeText(context,"A inceput rutina:  "+routine.title+",\n switch to Workout"+ counter.toString(),Toast.LENGTH_LONG).show()
+
     }
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -49,6 +59,8 @@ class HomeFragment : Fragment(), RoutineClickListener {
             layoutManager = LinearLayoutManager(context)
             adapter = RoutineAdapter(routinelist,mainActivity)
         }
+
+
 
         return binding.root
         //return inflater.inflate(R.layout.fragment_home, container, false)
