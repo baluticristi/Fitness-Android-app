@@ -1,25 +1,25 @@
 package com.example.myapplication
 
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import com.example.myapplication.databinding.FragmentAboutAppBinding
+import com.example.myapplication.databinding.FragmentWorkoutOverviewBinding
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [AddANewWorkout.newInstance] factory method to
- * create an instance of this fragment.
- */
+
 class AddANewWorkout : Fragment() {
-    // TODO: Rename and change types of parameters
+
+
     private var param1: String? = null
     private var param2: String? = null
+    private lateinit var binding: FragmentAboutAppBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,20 +34,22 @@ class AddANewWorkout : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_add_a_new_workout, container, false)
+        binding=FragmentAboutAppBinding.inflate(layoutInflater)
+        val btn = binding.resetbutton
+        btn.setOnClickListener(){
+            var sharedPreferences = activity?.getSharedPreferences("Names" , Context.MODE_PRIVATE)
+            sharedPreferences?.edit()?.clear()?.commit()
+            sharedPreferences = activity?.getSharedPreferences("Count" , Context.MODE_PRIVATE)
+            sharedPreferences?.edit()?.clear()?.commit()
+            Toast.makeText(context,"Memorie resetata",Toast.LENGTH_LONG).show()
+
+        }
+       return binding.root
+    // return inflater.inflate(R.layout.fragment_about_app, container, false)
     }
 
     companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment AddANewWorkout.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
+
         fun newInstance(param1: String, param2: String) =
             AddANewWorkout().apply {
                 arguments = Bundle().apply {

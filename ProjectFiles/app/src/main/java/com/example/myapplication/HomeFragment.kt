@@ -43,7 +43,7 @@ class HomeFragment : Fragment(), RoutineClickListener {
         //TODO TREBUIE IMPLEMENTATA FUNCTIA DE START RUTINA CAND SE DA CLICK
         WorkoutOverview.setRout(routine.title)
         R.id.workoutOverview
-        Toast.makeText(context,"A inceput rutina:  "+routine.title+",\n switch to Workout"+ counter.toString(),Toast.LENGTH_LONG).show()
+        Toast.makeText(context,"A inceput rutina:  "+routine.title+",\n switch to Workout",Toast.LENGTH_LONG).show()
 
     }
     override fun onCreateView(

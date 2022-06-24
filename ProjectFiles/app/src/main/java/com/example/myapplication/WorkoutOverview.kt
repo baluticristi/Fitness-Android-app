@@ -38,16 +38,20 @@ class WorkoutOverview : Fragment() , ViewClickListener{
         }
 
     }
-    override fun onClick(card:ExerciseCardBinding){
+    override fun onClick(card:ExerciseCardBinding, name:String){
         for(ex in listOfSets){
-            ex.set1w=card.set1weight.text.toString()
-            ex.set1r=card.set1reps.text.toString()
-            ex.set2w=card.set2weight.text.toString()
-            ex.set2r=card.set2reps.text.toString()
-            ex.set3w=card.set3weight.text.toString()
-            ex.set3r=card.set3reps.text.toString()
-            ex.set4w=card.set4weight.text.toString()
-            ex.set4r=card.set4reps.text.toString()
+//            Toast.makeText(context,"titlu ex:  "+ex.name+",\n titlu card ex"+ name,Toast.LENGTH_LONG).show()
+            if(name==ex.name) {
+                ex.set1w = card.set1weight.text.toString()
+                ex.set1r = card.set1reps.text.toString()
+                ex.set2w = card.set2weight.text.toString()
+                ex.set2r = card.set2reps.text.toString()
+                ex.set3w = card.set3weight.text.toString()
+                ex.set3r = card.set3reps.text.toString()
+                ex.set4w = card.set4weight.text.toString()
+                ex.set4r = card.set4reps.text.toString()
+            }
+
         }
     }
 
@@ -78,7 +82,7 @@ class WorkoutOverview : Fragment() , ViewClickListener{
 
             val btn = binding.button
             btn.setOnClickListener{
-                //TODO SALVEAZA DATELE IN DOCUMENT
+                //TODO SALVEAZA DATELE IN Mmorie vvvvvv
                 val calendar= Calendar.getInstance()
                 val year = calendar.get(Calendar.YEAR)
                 val month = calendar.get(Calendar.MONTH)
@@ -87,8 +91,9 @@ class WorkoutOverview : Fragment() , ViewClickListener{
                 val minute = calendar.get(Calendar.MINUTE)
 
                 val key : String = year.toString()+"."+month.toString()+"."+day.toString()+"."+hour.toString()+"."+minute.toString()
+
                 saveWorkout(key)
-                Toast.makeText(context,"Workout Salvat! " + x.toString(),Toast.LENGTH_LONG).show()
+                Toast.makeText(context,"Workout Salvat! ",Toast.LENGTH_LONG).show()
             }
             return binding.root
         }
@@ -113,7 +118,6 @@ class WorkoutOverview : Fragment() , ViewClickListener{
             }
     }
 
-    public var x=0
     private fun saveWorkout(key : String){
 
         saveWorkoutList(key)
@@ -123,7 +127,7 @@ class WorkoutOverview : Fragment() , ViewClickListener{
 
         editor?.apply {
             putString("routine", myRoutine)
-            x=0
+            var x=0
             for (ex in listOfSets)
             {
                 putString("exercise"+x.toString(), ex.name)

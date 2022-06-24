@@ -14,7 +14,7 @@
         android:icon="@drawable/history"
         android:title="History" />
     <item
-        android:id="@+id/addANewWorkout"
-        android:icon="@drawable/addanewworkout"
-        android:title="Add" />
+        android:id="@+id/aboutapp"
+        android:icon="@drawable/aboutapp"
+        android:title="About" />
 </menu>

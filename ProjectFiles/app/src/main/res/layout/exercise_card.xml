@@ -9,7 +9,7 @@
     android:layout_marginLeft="16dp"
     android:layout_marginRight="16dp"
     android:id="@+id/routineCard"
-    card_view:cardBackgroundColor="@color/teal_200"
+    card_view:cardBackgroundColor="@color/teal_700"
     card_view:cardCornerRadius="8dp"
     card_view:contentPadding="10dp"
     android:foreground="?selectableItemBackground">

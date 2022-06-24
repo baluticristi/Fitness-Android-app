@@ -18,5 +18,9 @@
 
 23.06 -- Am construit meniul pentru workout, generat automat, si salvat in memorie detaliile despre fiecare workout.
 		Am contruit meniul pentru istoric, generat automat pe baza workout-urilor salvate in memorie. Dar exista un bug
-		 care nu lasa.
+		 care nu mă lasa să afișez greutățile și repetările .
 
+24.06 -- Am terminat meniul about, adăugat un buton de resetarea memoriei, ce șterge istoricul și îl resetează.
+		Am rezolvat bug-ul legat de greutăți și repetări.
+	
+Final.

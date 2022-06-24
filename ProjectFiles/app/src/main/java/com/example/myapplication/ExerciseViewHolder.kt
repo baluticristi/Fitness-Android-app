@@ -22,8 +22,8 @@ class ExerciseViewHolder (
                 cardCellBinding.set4reps.setText(sets.set4r)
                 cardCellBinding.set4weight.setText(sets.set4w)
 
-                cardCellBinding.set1weight.addTextChangedListener {
-                    clickListener.onClick(cardCellBinding)
+                cardCellBinding.routineCard.setOnClickListener() {
+                    clickListener.onClick(cardCellBinding, exercise.title)
                 }
 
             }

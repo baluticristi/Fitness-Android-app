@@ -13,7 +13,7 @@ import com.example.myapplication.ui.main.historylist
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(){
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var navController: NavController
@@ -31,13 +31,16 @@ class MainActivity : AppCompatActivity() {
 
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_nav)
         setupWithNavController(bottomNavigationView, navController)
+        bottomNavigationView.setOnClickListener {
+            populateHistory()
+
+        }
        // textView = findViewById(R.id.exercise)
         var sharedPreferences = getSharedPreferences("Count" , Context.MODE_PRIVATE)
         counter=sharedPreferences.getInt("c",0)
 
         populateRoutines()
         populateExercises()
-
         populateHistory()
 
         //Display list of routines
@@ -53,10 +56,9 @@ class MainActivity : AppCompatActivity() {
 
     //History --  Cards cu ultimele Date + Rutina facuta in data x + Volum total exercitii vvvv
         //Fiecare card Deschide o pagina cu detalii despre exercitiile din ziua data   vvvv
-
-        //TODO  Nu se mai salveaza greutatile si seturile,
-        //o scurta descriere pe tab 4
-        //autorefresh la history
+        //TODO  Nu se mai salveaza greutatile si seturile, vv
+        //o scurta descriere pe tab 4 bvvvvvv
+        //autorefresh la history  vvvvvv
 
 
 
@@ -73,7 +75,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    private fun populateHistory() {
+    fun populateHistory() {
             historylist.clear()
             for (i in (counter-1) downTo 0){
                 var sharedPreferences = getSharedPreferences("Names" , Context.MODE_PRIVATE)

@@ -11,10 +11,10 @@
         android:label="fragment_workout_overview"
         tools:layout="@layout/fragment_workout_overview" />
     <fragment
-        android:id="@+id/addANewWorkout"
+        android:id="@+id/aboutapp"
         android:name="com.example.myapplication.AddANewWorkout"
         android:label="fragment_add_a_new_workout"
-        tools:layout="@layout/fragment_add_a_new_workout" />
+        tools:layout="@layout/fragment_about_app" />
     <fragment
         android:id="@+id/pastWorkouts"
         android:name="com.example.myapplication.PastWorkouts"
